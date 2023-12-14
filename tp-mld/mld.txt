@@ -1,0 +1,15 @@
+//  ->   commande 1,n (1 user pour n order)
+User(id, email, password, firtname, lastname, birthdate, address, complements, postal_code, city, #id_order)
+
+//  ->   order 1,n (1 order pour n order_line)
+Order(id, reference, date, #id_order_line)
+
+//  ->   order_line 1,n (1 order_line pour n product)
+Order_line(id, quantity, price, #id_product,)
+
+//  ->   product n,n (n product pour n category)
+product(id, name, description, price, #id_category, #id_picture)
+
+picture(id, src, alt)
+
+category(id, nom)
